@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+  text-align:center;
+  font-family:Arial;
+  margin-top:50px;
+}
+
+button{
+  width:120px;
+  height:70px;
+  font-size:20px;
+  margin:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>ESP32 CAR</h1>
+
+<button onclick="sendData('F')">TIEN</button>
+
+<br><br>
+
+<button onclick="sendData('L')">TRAI</button>
+
+<button onclick="sendData('S')">DUNG</button>
+
+<button onclick="sendData('R')">PHAI</button>
+
+<br><br>
+
+<button onclick="sendData('B')">LUI</button>
+
+<script>
+
+var socket = new WebSocket("ws://192.168.1.7:81/");
+
+socket.onopen = function(){
+  console.log("Connected");
+}
+
+function sendData(data){
+
+  socket.send(data);
+
+}
+
+</script>
+
+</body>
+</html>
