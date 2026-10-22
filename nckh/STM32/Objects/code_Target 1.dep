@@ -1,0 +1,105 @@
+Dependencies for Project 'code', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6130001::V6.13.1::.\ARMCLANG
+F (.\src\main.c)(0x6ACCAAFC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./src -I ./lib-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/ASUS/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/ASUS/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD-o ./objects/main.o -MD)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h)(0x61AD876E)
+I (RTE\_Target_1\RTE_Components.h)(0x6ACC949E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5DB35BB0)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_version.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5D8A2C6E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\system_stm32f10x.h)(0x61AD876E)
+I (lib\GPIO.h)(0x6ACCA926)
+I (lib\PWM.h)(0x6ACCA932)
+I (lib\BUTTON.h)(0x6ACCA924)
+I (lib\SYSTICK.h)(0x6ACCA934)
+I (lib\PID.h)(0x6ACCAAFC)
+I (lib\motor_config.h)(0x6ACCAAFC)
+I (lib\motor_protocol.h)(0x6ACCAAFC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5DB35BB0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5DB35BB0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5DB35BB0)
+F (.\lib\GPIO.h)(0x6ACCA926)()
+F (.\lib\GPIO.c)(0x6ACCA926)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./src -I ./lib-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/ASUS/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/ASUS/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD-o ./objects/gpio.o -MD)
+I (lib\GPIO.h)(0x6ACCA926)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h)(0x61AD876E)
+I (RTE\_Target_1\RTE_Components.h)(0x6ACC949E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5DB35BB0)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_version.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5D8A2C6E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\system_stm32f10x.h)(0x61AD876E)
+F (.\lib\PWM.h)(0x6ACCA932)()
+F (.\lib\PWM.c)(0x6ACCAAAC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./src -I ./lib-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/ASUS/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/ASUS/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD-o ./objects/pwm.o -MD)
+I (lib\PWM.h)(0x6ACCA932)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h)(0x61AD876E)
+I (RTE\_Target_1\RTE_Components.h)(0x6ACC949E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5DB35BB0)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_version.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5D8A2C6E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\system_stm32f10x.h)(0x61AD876E)
+I (lib\motor_config.h)(0x6ACCAAFC)
+F (.\lib\BUTTON.h)(0x6ACCA924)()
+F (.\lib\BUTTON.c)(0x6ACCA924)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./src -I ./lib-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/ASUS/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/ASUS/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD-o ./objects/button.o -MD)
+I (lib\BUTTON.h)(0x6ACCA924)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h)(0x61AD876E)
+I (RTE\_Target_1\RTE_Components.h)(0x6ACC949E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5DB35BB0)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_version.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5D8A2C6E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\system_stm32f10x.h)(0x61AD876E)
+I (lib\SYSTICK.h)(0x6ACCA934)
+F (.\lib\SYSTICK.h)(0x6ACCA934)()
+F (.\lib\SYSTICK.c)(0x6ACCAAAC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./src -I ./lib-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/ASUS/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/ASUS/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD-o ./objects/systick.o -MD)
+I (lib\SYSTICK.h)(0x6ACCA934)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h)(0x61AD876E)
+I (RTE\_Target_1\RTE_Components.h)(0x6ACC949E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5DB35BB0)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_version.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5D8A2C6E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\system_stm32f10x.h)(0x61AD876E)
+F (.\lib\PID.c)(0x6ACCAAFC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./src -I ./lib-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/ASUS/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/ASUS/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD-o ./objects/pid.o -MD)
+I (lib\PID.h)(0x6ACCAAFC)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5DB35BB0)
+I (lib\SYSTICK.h)(0x6ACCA934)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h)(0x61AD876E)
+I (RTE\_Target_1\RTE_Components.h)(0x6ACC949E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_version.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5D8A2C6E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\system_stm32f10x.h)(0x61AD876E)
+I (lib\motor_config.h)(0x6ACCAAFC)
+F (.\lib\PID.h)(0x6ACCAAFC)()
+F (RTE\Device\STM32F103C8\RTE_Device.h)(0x6ACCA91E)()
+F (RTE\Device\STM32F103C8\startup_stm32f10x_md.s)(0x6ACCA91E)(--cpu Cortex-M3 -g-I.\RTE\Device\STM32F103C8-I.\RTE\_Target_1-IC:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-IC:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 529"--pd "_RTE_ SETA 1"--pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst--xref -o .\objects\startup_stm32f10x_md.o--depend .\objects\startup_stm32f10x_md.d)
+F (RTE\Device\STM32F103C8\system_stm32f10x.c)(0x6ACCA920)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./src -I ./lib-I./RTE/Device/STM32F103C8-I./RTE/_Target_1-IC:/Users/ASUS/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/ASUS/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD-o ./objects/system_stm32f10x.o -MD)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h)(0x61AD876E)
+I (RTE\_Target_1\RTE_Components.h)(0x6ACC949E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm3.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5DB35BB0)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_version.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6964748E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5D8A2C6E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x6964748E)
+I (C:\Users\ASUS\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\system_stm32f10x.h)(0x61AD876E)
