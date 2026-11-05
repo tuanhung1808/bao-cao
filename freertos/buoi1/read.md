@@ -109,5 +109,17 @@
 ![alt text](image-6.png)
 
 
+# 6. API
+
+- là tập các hàm do FreeRTOS cung cấp để code giao tiếp với kernel. vd : tạo task, delay,...
+
+- có 2 phiên bản là cmsis freertos api với freertos api  
+
+![alt text](image-7.png)
+
+![alt text](image-8.png)
+
+
+
 
 
