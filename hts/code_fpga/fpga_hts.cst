@@ -1,0 +1,47 @@
+// ==========================================================
+// FILE RÀNG BUỘC VẬT LÝ (.cst) - SMART DASHBOARD 4 BUTTONS
+// ==========================================================
+
+// --- Xung nhịp & Nút Reset ---
+IO_LOC "sys_clk" 52;
+IO_PORT "sys_clk" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+IO_LOC "sys_rst_n" 4;
+IO_PORT "sys_rst_n" IO_TYPE=LVCMOS18 PULL_MODE=UP BANK_VCCIO=1.8;
+
+// --- 4 NÚT BẤM (Kéo xuống GND để kích hoạt) ---
+// Đã sửa "btn_menu_ok" thành "btn_menu" để khớp với top.v
+IO_LOC "btn_menu" 70;
+IO_PORT "btn_menu" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+IO_LOC "btn_up" 71;
+IO_PORT "btn_up" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+IO_LOC "btn_down" 72;
+IO_PORT "btn_down" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+IO_LOC "btn_back" 73;
+IO_PORT "btn_back" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+// --- I2C CHUNG (DS3231 & BH1750) ---
+IO_LOC "I2C_SCL" 29;
+IO_PORT "I2C_SCL" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 OPEN_DRAIN=ON BANK_VCCIO=3.3;
+
+IO_LOC "I2C_SDA" 30;
+IO_PORT "I2C_SDA" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 OPEN_DRAIN=ON BANK_VCCIO=3.3;
+
+// --- SPI TFT ST7789 ---
+IO_LOC "tft_sclk" 37;
+IO_PORT "tft_sclk" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "tft_mosi" 36;
+IO_PORT "tft_mosi" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "tft_cs" 38;
+IO_PORT "tft_cs" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "tft_dc" 39;
+IO_PORT "tft_dc" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "tft_res" 40;
+IO_PORT "tft_res" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
