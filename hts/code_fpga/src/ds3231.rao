@@ -1,0 +1,107 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Standard</Mode>
+    <AoCore index="0" sample_clock="sys_clk" trig_type="0" storage_depth="1024" window_num="1" capture_amount="1024" implementation="0" trigger_pos="0" module_name="DS3231" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+        <SignalList>
+            <Signal capture_enable="true">sys_clk</Signal>
+            <Signal capture_enable="true">SCL</Signal>
+            <Signal capture_enable="true">SDA</Signal>
+            <Bus capture_enable="true" name="sec[5:0]">
+                <Signal>sec[5]</Signal>
+                <Signal>sec[4]</Signal>
+                <Signal>sec[3]</Signal>
+                <Signal>sec[2]</Signal>
+                <Signal>sec[1]</Signal>
+                <Signal>sec[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="mins[5:0]">
+                <Signal>mins[5]</Signal>
+                <Signal>mins[4]</Signal>
+                <Signal>mins[3]</Signal>
+                <Signal>mins[2]</Signal>
+                <Signal>mins[1]</Signal>
+                <Signal>mins[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="hour[4:0]">
+                <Signal>hour[4]</Signal>
+                <Signal>hour[3]</Signal>
+                <Signal>hour[2]</Signal>
+                <Signal>hour[1]</Signal>
+                <Signal>hour[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="date[4:0]">
+                <Signal>date[4]</Signal>
+                <Signal>date[3]</Signal>
+                <Signal>date[2]</Signal>
+                <Signal>date[1]</Signal>
+                <Signal>date[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="month[3:0]">
+                <Signal>month[3]</Signal>
+                <Signal>month[2]</Signal>
+                <Signal>month[1]</Signal>
+                <Signal>month[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="year[7:0]">
+                <Signal>year[7]</Signal>
+                <Signal>year[6]</Signal>
+                <Signal>year[5]</Signal>
+                <Signal>year[4]</Signal>
+                <Signal>year[3]</Signal>
+                <Signal>year[2]</Signal>
+                <Signal>year[1]</Signal>
+                <Signal>year[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="RxByte[2:0]">
+                <Signal>RxByte[2]</Signal>
+                <Signal>RxByte[1]</Signal>
+                <Signal>RxByte[0]</Signal>
+            </Bus>
+        </SignalList>
+        <Triggers>
+            <Trigger index="0">
+                <SignalList>
+                    <Signal>sys_clk</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="1"/>
+            <Trigger index="2"/>
+            <Trigger index="3"/>
+            <Trigger index="4"/>
+            <Trigger index="5"/>
+            <Trigger index="6"/>
+            <Trigger index="7"/>
+            <Trigger index="8"/>
+            <Trigger index="9"/>
+            <Trigger index="10"/>
+            <Trigger index="11"/>
+            <Trigger index="12"/>
+            <Trigger index="13"/>
+            <Trigger index="14"/>
+            <Trigger index="15"/>
+        </Triggers>
+        <MatchUnits>
+            <MatchUnit index="0" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="0" value1="0" trigger="0"/>
+            <MatchUnit index="1" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="2" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="5" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="6" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="7" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="8" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="9" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="10" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="11" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="12" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="13" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="14" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+        </MatchUnits>
+        <Expressions type="Static">
+            <Expression>M0</Expression>
+        </Expressions>
+    </AoCore>
+    <GAO_ID>0111010001110111</GAO_ID>
+</GAO_CONFIG>

@@ -1,0 +1,141 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Standard</Mode>
+    <AoCore index="0" sample_clock="sys_clk" trig_type="0" storage_depth="1024" window_num="1" capture_amount="1024" implementation="0" trigger_pos="0" module_name="top" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
+        <SignalList>
+            <Bus capture_enable="true" name="sec[5:0]">
+                <Signal>sec[5]</Signal>
+                <Signal>sec[4]</Signal>
+                <Signal>sec[3]</Signal>
+                <Signal>sec[2]</Signal>
+                <Signal>sec[1]</Signal>
+                <Signal>sec[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="mins[5:0]">
+                <Signal>mins[5]</Signal>
+                <Signal>mins[4]</Signal>
+                <Signal>mins[3]</Signal>
+                <Signal>mins[2]</Signal>
+                <Signal>mins[1]</Signal>
+                <Signal>mins[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="hour[4:0]">
+                <Signal>hour[4]</Signal>
+                <Signal>hour[3]</Signal>
+                <Signal>hour[2]</Signal>
+                <Signal>hour[1]</Signal>
+                <Signal>hour[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="lux_data[15:0]">
+                <Signal>lux_data[15]</Signal>
+                <Signal>lux_data[14]</Signal>
+                <Signal>lux_data[13]</Signal>
+                <Signal>lux_data[12]</Signal>
+                <Signal>lux_data[11]</Signal>
+                <Signal>lux_data[10]</Signal>
+                <Signal>lux_data[9]</Signal>
+                <Signal>lux_data[8]</Signal>
+                <Signal>lux_data[7]</Signal>
+                <Signal>lux_data[6]</Signal>
+                <Signal>lux_data[5]</Signal>
+                <Signal>lux_data[4]</Signal>
+                <Signal>lux_data[3]</Signal>
+                <Signal>lux_data[2]</Signal>
+                <Signal>lux_data[1]</Signal>
+                <Signal>lux_data[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">lux_valid</Signal>
+            <Signal capture_enable="false">shift_clk</Signal>
+            <Bus capture_enable="false" name="led[5:0]">
+                <Signal>led[5]</Signal>
+                <Signal>led[4]</Signal>
+                <Signal>led[3]</Signal>
+                <Signal>led[2]</Signal>
+                <Signal>led[1]</Signal>
+                <Signal>led[0]</Signal>
+            </Bus>
+            <Bus capture_enable="false" name="data[15:0]">
+                <Signal>data[15]</Signal>
+                <Signal>data[14]</Signal>
+                <Signal>data[13]</Signal>
+                <Signal>data[12]</Signal>
+                <Signal>data[11]</Signal>
+                <Signal>data[10]</Signal>
+                <Signal>data[9]</Signal>
+                <Signal>data[8]</Signal>
+                <Signal>data[7]</Signal>
+                <Signal>data[6]</Signal>
+                <Signal>data[5]</Signal>
+                <Signal>data[4]</Signal>
+                <Signal>data[3]</Signal>
+                <Signal>data[2]</Signal>
+                <Signal>data[1]</Signal>
+                <Signal>data[0]</Signal>
+            </Bus>
+            <Bus capture_enable="false" name="state[3:0]">
+                <Signal>state[3]</Signal>
+                <Signal>state[2]</Signal>
+                <Signal>state[1]</Signal>
+                <Signal>state[0]</Signal>
+            </Bus>
+            <Signal capture_enable="false">data_valid</Signal>
+            <Signal capture_enable="false">SCL</Signal>
+            <Signal capture_enable="false">SDA</Signal>
+            <Bus capture_enable="false" name="I2C_ADDR[6:0]">
+                <Signal>I2C_ADDR[6]</Signal>
+                <Signal>I2C_ADDR[5]</Signal>
+                <Signal>I2C_ADDR[4]</Signal>
+                <Signal>I2C_ADDR[3]</Signal>
+                <Signal>I2C_ADDR[2]</Signal>
+                <Signal>I2C_ADDR[1]</Signal>
+                <Signal>I2C_ADDR[0]</Signal>
+            </Bus>
+        </SignalList>
+        <Triggers>
+            <Trigger index="0">
+                <SignalList>
+                    <Signal>sys_clk</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="1"/>
+            <Trigger index="2"/>
+            <Trigger index="3"/>
+            <Trigger index="4"/>
+            <Trigger index="5"/>
+            <Trigger index="6"/>
+            <Trigger index="7"/>
+            <Trigger index="8"/>
+            <Trigger index="9"/>
+            <Trigger index="10"/>
+            <Trigger index="11"/>
+            <Trigger index="12"/>
+            <Trigger index="13"/>
+            <Trigger index="14"/>
+            <Trigger index="15"/>
+        </Triggers>
+        <MatchUnits>
+            <MatchUnit index="0" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="1" func="0" value0="X" value1="0" trigger="0"/>
+            <MatchUnit index="1" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="2" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="5" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="6" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="7" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="8" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="9" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="10" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="11" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="12" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="13" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="14" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+        </MatchUnits>
+        <Expressions type="Static">
+            <Expression>M0</Expression>
+            <Expression>M0</Expression>
+        </Expressions>
+    </AoCore>
+    <GAO_ID>1000011001111001</GAO_ID>
+</GAO_CONFIG>

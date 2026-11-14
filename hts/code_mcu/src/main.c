@@ -803,7 +803,7 @@ static void handle_buttons(uint8_t events, uint32_t now)
     case SCR_MAIN:
         if (events & BTN_MENU) screen_enter(SCR_MENU, now);
         /* ĐÃ FIX: Cho phép bấm BACK ở màn hình chính mở Menu */
-        if (events & BTN_BACK) screen_enter(SCR_MENU, now); 
+        if (events & BTN_BACK) screen_enter(SCR_MENU, now);
         break;
 
     case SCR_MENU:
