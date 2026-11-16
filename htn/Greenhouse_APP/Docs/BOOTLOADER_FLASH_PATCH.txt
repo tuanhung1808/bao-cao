@@ -1,0 +1,17 @@
+IMPORTANT — protect Config Flash during OTA
+===========================================
+The uploaded Bootloader source currently has FW_END_PAGE=127, and ESP32 main.cpp allows 78 KB. That configuration can erase/write over the app's reserved config page at 0x0801FC00.
+For this application's chosen layout, adjust the existing files:
+
+1) Bootloader/MDK/mylib/flash.h
+   #define FW_START_PAGE  50UL
+   #define FW_END_PAGE    125UL
+   This makes FW_END_ADDR = 0x0801F800 (exclusive).
+
+2) ESP32/Bootloader/src/main.cpp
+   #define APP_ADDR       0x0800C800UL
+   #define MAX_FW_SIZE    (76UL * 1024UL)
+
+3) If metadata is later used at 0x0801F800, do not include that page in the firmware area either. Keep config at 0x0801FC00.
+
+This partition protects page 126 (metadata) and page 127 (user config). Do not run OTA until the bootloader and ESP32 limits have been updated together. Firmware maximum size = 0x0801F800 - 0x0800C800 = 77,824 bytes (76 KiB).
