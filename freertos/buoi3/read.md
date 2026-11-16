@@ -1,24 +1,33 @@
-# 1. phân chia memory
+# 1. context switching (chuyển đổi ngữ cảnh)
+- là quá trình mà cpu chuyển từ thực thi tiến trình này sang tiến trình khác, quá trình chuyển từ task này sang task khác
+![alt text](image-1.png)
 
-- chủ yếu nằm trong phân vùng heap
-- chia thành nhiều task
-- trong mỗi task có :
 ![alt text](image.png)
-     - stack : chứa địa chỉ các biến, vân vân..
-     - TCB : lưu chữ các thanh ghi ví dụ như sp(lưu trữ địa chỉ đầu của stack), pc(thanh ghi lưu chữ địa chỉ của lệnh tiếp theo đối với arm cortex m3), r0, r1, ....
-    ![alt text](image-2.png)
 
-   ![alt text](image-1.png)
+scheduler : quyết định task nào được chạy tiếp theo
+
+- systick thì là bộ đếm thời gian, quyết định xem có cần thực hiện context switch hay k
+
+- PendSV là ngắt phần mềm, là một loại exception đặc biệt trên vi điều khiển lỗi arm, được thiết kế hỗ trợ context switching giúp chuyển đổi giữa các task hiệu quả hơn
+
+![alt text](image-2.png)
+
+--> nói chung systick và scheduler ra quyết định còn PendSV là người thực hiện
+# 2. quá trình lưu thông tin và lấy lại thông tin của pendsv
+
+-  trên arm cotexM thì freertos dùng thanh ghi hệ thống ICSR để yêu cầu pendSV
+
+- khi quá trình context switching xảy ra thì các thanh ghi của task cũ sẽ được lưu vào stack riêng của task đó
+
+- đồng thời lưu địa chỉ đỉnh SP vào TCB của task đó (ví dụ : pxTopOfStack)
 
 
-# 2. cách quản lí heap của rtos
+- khi khôi phục lại task thì cpu lấy địa chỉ đỉnh SP ra từ TCB và tiếp tục thực hiện lệnh tiếp theo
 
-- heap1 : không cho phép giải phóng bộ nhớ. tạo 1 task ngay khi khởi động chạy liền tù tì và k giải phóng task
-- heap 2 : cho phép giải phóng bộ nhớ, nhưng k thay đổi các vùng nhớ ban đầu hay k gộp được các vùng nhớ vào nhau
-- heap 3 : dùng code c malloc() và free() để cấp phát và giải phóng bộ nhớ. vòng free space sau khi giải phóng bộ nhớ sẽ gây ra hiện tượng phân mảnh bộ nhớ
+- pendSV có mức ưu tiên thấp nhất, ví dụ như sau ngắt uart, ngắt timer
 
-- heap 4 : có thể giải phóng bộ nhớ và gộp các vùng nhớ lại với nhau sau khi giải phóng, giải quyết được phân mảnh bộ nhớ. chỉ sử dụng memory nội
-
-- heap 5 : y hệt heap 4 nhưng sử dụng được memory ngoại, quản lý nhiều vùng ram khác nhau như sram, pram
-
+# 3. pendsv làm gì và làm như nào
 ![alt text](image-3.png)
+
+
+- 
