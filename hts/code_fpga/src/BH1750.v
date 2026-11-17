@@ -29,10 +29,10 @@ SUA LOI so voi ban goc (xem giai thich chi tiet trong hoi thoai):
 */
 
 module BH1750#(
-    parameter Freq_MegaHZ      = 50,     // tan so sys_clk thuc te (MHz) - PHAI khop voi clock cap cho module
+    parameter Freq_MegaHZ      = 27,     // tan so sys_clk thuc te (MHz) - PHAI khop voi clock cap cho module
     parameter ADDR_SEL_HIGH    = 0,      // 0 = dung dia chi 0x23 (ADD noi GND/tha noi, mac dinh)
                                           // 1 = dung dia chi 0x5C (ADD noi VCC)
-    parameter READ_PERIOD_TICKS = 18000  // so tick clk_iic (~100kHz) giua 2 lan doc lien tiep (~180ms)
+    parameter READ_PERIOD_TICKS = 100000  // so tick clk_iic (~100kHz) giua 2 lan doc lien tiep 
 )(
     sys_clk, _rst, str, SCL, SDA, data, data_valid, busy
 );
@@ -98,7 +98,7 @@ localparam PH_INIT_CONT  = 2'd1;
 localparam PH_READ       = 2'd2;
 
 reg [1:0]  phase      = PH_INIT_PWRON;
-reg [14:0] read_timer = 'd0;
+reg [17:0] read_timer = 'd0;
 reg        kick       = 1'b0;   // xung 1 tick clk_iic: "hay bat dau 1 giao dich moi"
 reg        start_req  = 1'b0;
 reg        boot_done  = 1'b0;   // dam bao co DUNG 1 xung kick ngay sau reset de bat dau giao dich dau tien
@@ -146,6 +146,7 @@ always@(posedge clk_iic, negedge _rst)begin
 		else if(state==Address) start_req <= 1'b0;
 	end
 end
+
 
 assign start = start_req;
 assign RW    = (phase == PH_READ) ? 1'b1 : 1'b0;
